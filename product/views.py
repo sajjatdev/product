@@ -39,3 +39,6 @@ class collection(APIView):
         query_set=get_list_or_404(Collection.objects.all())
         getserializer=collectionSerializer(query_set,many=True)
         return Response(getserializer.data)
+
+    def delete(salf,res):
+        pass
