@@ -21,6 +21,9 @@ class Products(APIView):
       
         return Response(getserializer.data)
 
+    def put(self,res):
+        pass    
+
 class collection(APIView):
 
     def post(self,res):
